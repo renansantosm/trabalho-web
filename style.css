@@ -1,0 +1,177 @@
+/* Aplicando um estilo padrão para todas as paginas */
+/* Site preto e branco para dar um aspecto minimalista e unico a ele */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    background-color: black;  
+    color: #fff;
+}
+
+/* Barra de navegação */
+/* Usando o flexbox para o espaçamento dos nav-item dentro da div */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+/* Personalizando a logo, centralizando ela na navbar e alterando tamanho da fonte  */
+.nav-bar .logo {
+    display: flex;
+    align-items: center;
+}
+.nav-bar .logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+  
+/* Usando o Flexbox para colocar os links em uma linha, aos inves de uma coluna */
+.nav-bar .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Espaçamento entre os nav-item */
+.nav-bar .nav-list ul .nav-item {
+    margin: 20px 15px;
+}
+
+/* Personalizando os links da navbar */
+.nav-bar .nav-list ul .nav-item .nav-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Efeito de hover nos links da navbar */
+.nav-bar .nav-list ul .nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.6431372549);
+}
+  
+/* Container BASE utilizado por todas as paginas para a estilização */
+/* Definindo o espaçamento e o tamanho da fonte utilizados em todas as paginas */
+.container01 {
+    padding: 5rem;
+    font-size: 2rem;
+}
+.container01 h1 {
+ padding: 0.5rem;
+}
+.container01 h1,
+.container01 h2,
+.container01 p {
+  padding-left: 1.1rem;
+}
+
+/* Personalizando as ancoras e retirando os sublinhados dos links */
+.container01 h1 a,
+.container01 p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5411764706);
+}
+
+/* Efeito de hover na tag spam */
+.container01 h1 a:hover,
+.container01 p a:hover,
+.container01 p spam:hover {
+  color: rgba(255, 255, 255, 0.7333333333);
+}
+
+/* Pagina formacao */
+/* Personalizando o h2 da pagina formacao, retirando o sublinhado do link e adicionando um efeito de hover */
+.container01 h2 a{
+    text-decoration: none;
+}
+.container01 h2 a:hover{
+    color: rgba(255, 255, 255, 0.7333333333);
+}
+
+/* Alterando distancia dos itens(links dos cursos) da pagina formacao */
+.container01 .paragraph-item{
+    padding-left: 3rem;
+}
+
+/* Pagina portfolio */
+/* Usando o Flexbox para colocar as informacoes da WebAPI e a foto lado a lado */
+.container01 .repo{
+    display: flex;
+}
+
+/* Aumentando o h2 da pagina portfolio */
+.container01 .repo h2{
+    font-size: 2.5rem;
+}
+
+/* Personalizando a lista do portfolio */
+/* Personalizando os items da lista da pagina portfolio */
+.container01 .repo .repo-info ul li{
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+}
+
+/* Personalizando a cor da tag spam */
+.container01 .repo .repo-info ul li .features{
+    color: rgba(255, 255, 255, 0.473);
+}
+
+/* Personalizando o texto da ancora do repositorio, e retirando o sublinhado */
+.container01 .repo .github-photo a{
+    justify-self: center;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-left: 8rem;
+}
+
+/* Efeito de hover na ancora */
+.container01 .repo .github-photo a:hover{
+    color: rgba(255, 255, 255, 0.7333333333);
+}
+
+
+/* Pagina portfolio */
+/* Posicionando os inputs */
+.container01 .form-input, .form-btn{
+    padding-left: 1.2rem;
+    padding-bottom: 0.2rem;
+}
+
+/* Configurando o estilo para os inputs e <textarea> */
+.container01 .form-input input, textarea{
+    width: 60%;
+    padding: 0.8rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Efeito de hover nos campos de input e textarea */
+.container01 .form-input input:hover, textarea:hover{
+    background-color: #e7e7e7;
+}
+
+/* Distanciando o button do input acima dele */
+.container01 .form-btn{
+    margin-top: 0.5rem;
+}
+
+/* Personalizando o button */
+.container01 .form-btn button{
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 1.3rem;
+    color: black;
+}
+
+/* Efeitod e hover no button */
+.container01 .form-btn button:hover{
+    background-color: rgba(255, 255, 255, 0.6431372549);
+    cursor: pointer;
+}
